@@ -1,19 +1,10 @@
 from fastapi import FastAPI, HTTPException, Depends
 import uvicorn
 from mysql.connector import connect, Error
-from dotenv import load_dotenv
 from database.database import get_database
 from models.company_details import CompanyDetails
 
-load_dotenv()
-
-
 app = FastAPI()
-
-
-@app.get('/')
-def index():
-    return {'name': 'JP'}
 
 
 @app.get('/company-detail/{symbol}')

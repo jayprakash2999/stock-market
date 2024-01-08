@@ -12,11 +12,8 @@ Clone the repository:
    ```bash
    git clone https://github.com/jayprakash2999/stock-market
    cd stock-market
-
-Create a copy of the environment variables file:
-    cp .env.example .env
     
-Update the .env file with your desired configurations. Make sure to fill in sensitive information like database credentials.
+Update the config.py file with your desired configurations. Make sure to fill in sensitive information like database credentials.
 
     
 in dummy_data.py, there are dummy datas of various company. So, create a table with those fields and insert these records by going inside mysql container
