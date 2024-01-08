@@ -16,10 +16,11 @@ Clone the repository:
 Create a copy of the environment variables file:
     cp .env.example .env
     
-Install Mysql and create database and also the user and password
-in dummy_data.py, there are dummy datas of various company. So, create a table with those fields and insert these records
-
 Update the .env file with your desired configurations. Make sure to fill in sensitive information like database credentials.
+
+    
+in dummy_data.py, there are dummy datas of various company. So, create a table with those fields and insert these records by going inside mysql container
+Commands to create table and insert data is given in dummy_data.py
 
 Build and run the Docker containers:
 
