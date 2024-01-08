@@ -1,9 +1,12 @@
 from fastapi import FastAPI, HTTPException, Depends
+import uvicorn
 from mysql.connector import connect, Error
+from dotenv import load_dotenv
 from database.database import get_database
 from models.company_details import CompanyDetails
 
-import uvicorn
+load_dotenv()
+
 
 app = FastAPI()
 

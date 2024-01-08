@@ -5,3 +5,4 @@ pytest
 httpx
 databases
 aiomysql
+python-dotenv

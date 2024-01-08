@@ -36,3 +36,4 @@ node_modules/
 
 # Configuration files
 *.swp
+.env
